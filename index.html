@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <!-- aos -->
+     <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+      .brands-container {
+          padding: 20px;
+          overflow: hidden;
+          position: relative;
+      }
+      
+      .brands-container .row {
+          display: flex;
+          flex-wrap: nowrap;
+          animation: scroll 20s linear infinite; 
+          gap: 15px;
+      }
+      h1{
+          font-family: Arial, Helvetica, sans-serif;
+          margin-top: 80px;
+          font-weight: 600;
+      }
+      
+      @keyframes scroll {
+          0% {
+              transform: translateX(0);
+          }
+          100% {
+              transform: translateX(calc(-100% - 15px));
+          }
+      }
+      
+     
+      .col-md-4,
+      .col-sm-6 {
+          flex: 0 0 auto;
+          width: 300px;
+      }
+      
+      .card {
+          width: 100%;
+          border: none;
+          transition: transform 0.2s ease-in-out;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .card:hover {
+          transform: scale(1.05);
+      }
+      
+      .card-img-top {
+          height: auto;
+          max-height: 200px;
+          object-fit: contain;
+      }
+      .content-grocer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .content-grocer img {
+            max-width: 100%;
+            height: 350px;
+        }
+        .content-grocer .text {
+            max-width: 600px;
+            margin: 20px;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="container-fluid main">
+        <div class="row text-center head">
+            <div class="col-lg-6 brd1 head-sec1">
+                <a href="#" class="logo">OFFERS %</a>
+            </div>
+            <div class="col-lg-6 brd1 mt-2">
+                <a class="top-links" href="#topbrands">TOP BRANDS</a>
+            </div>
+            <!-- <div class="col-lg-4">
+                <a class="top-links" href="#"></a>
+            </div> -->
+        </div>
+        <div class="row mt-3 head1">
+          <div class="col-lg-2 d-flex">
+            <p class="mt-2 logo1">GROCi</p>
+              <img class="logo-img" src="assets/img/groci-removebg-preview.png" alt="logo" width="80" height="70">
+          </div>
+          <div class="col-lg-2 mt-4">
+            <div class="dropdown">
+                <a class="nav-links dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    OUR PRODUCTS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                    <li><a class="dropdown-item" href="#">Fruits & Vegetables</a></li>
+                    <li><a class="dropdown-item" href="#">Meat & Eggs</a></li>
+                    <li><a class="dropdown-item" href="#">Sugar,salt & Grains</a></li>
+                    <li><a class="dropdown-item" href="#">Oil,spices & Pickles</a></li>
+                    <li><a class="dropdown-item" href="#">Bakery & Diary</a></li>
+                    <li><a class="dropdown-item" href="#">Snacks & Foods</a></li>
+                    <li><a class="dropdown-item" href="#">Baby kits</a></li>
+                    <li><a class="dropdown-item" href="#">Pets Food</a></li>
+                    <li><a class="dropdown-item" href="#">Beverages & Drinks</a></li>
+                    <li><a class="dropdown-item" href="#">Personal Care</a></li>
+                    <li><a class="dropdown-item" href="#">Rice,Atta & Dals</a></li>
+                    <li><a class="dropdown-item" href="#">Household</a></li>
+                    <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
+                    <li><a class="dropdown-item" href="#">School & Stationary</a></li>
+                </ul>
+            </div>
+        </div>
+          <div class="col-lg-3">
+              <div class="mt-4">
+                  <input class="search-bar" type="search" placeholder="Search for products">
+              </div>
+          </div>
+         
+          <div class="col-lg-2 mt-4 text-center">
+              <i class="fa-solid fa-user" style="color: #000000;"></i>                
+              <a class="nav-links" href="login.html">SIGN IN</a>
+          </div>
+          <div class="col-lg-2 mt-4 text-center">
+            <i class="fa-solid fa-phone" style="color: #000000;"></i>
+            <a class="nav-links" href="contact.html">CONTACT US</a>
+          </div>
+          <div class="col-lg-1 mt-4 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+              <a class="nav-links" href="#">CART</a>
+          </div>
+      </div>
+      
+    </div>
+    <div class="brd2 mt-3"></div>
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="">
+                <marquee behavior="" direction="" class="marquee">FRESH AND HEALTHY PRODUCTS UPTO EXCITING <span style="color: #000000;">OFFERS</span> + GET <span style="color: #000000;">25% OFF</span> ON YOUR FIRST ORDER .</marquee>
+            </div>
+        </div>
+       
+   </div> 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 mt-1">
+            <img src="assets/img/off1.jpeg"  alt="..." width="100%" >
+        </div>
+        <div class="col-lg-3 mt-1">
+            <img src="assets/img/off2.jpg"  alt="..." width="100%">
+          </div>
+          <div class="col-lg-3 mt-1">
+            <img src="assets/img/off3.jpg" alt="..." width="100%">
+        </div>
+        <div class="col-lg-3 mt-1">
+            <img src="assets/img/off4.jpeg" alt="..." width="100%">
+        </div>
+        </div>
+        
+    </div>
+    <div class="container-fluid content-fruit">
+      <div class="row">
+          <div class="col-md-6 bg-sec">
+              <h4>FRESH EXOTIC FRUITS</h4>
+             
+              <p>Savor the unique flavors of hand-picked, fresh exotic fruits from around the world.
+                Indulge in a tropical taste adventure with our premium selection.</p>
+              <button type="button" class="buy-btn">Buy</button>
+          </div>
+      </div>
+  </div>
+  
+    <div class="container-fluid mt-5">
+      <div class="container-fluid back-g">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/img/bowl.jpg" alt="" width="100%" height="350">
+          </div>
+          <div class="col-lg-6">
+            <p class="off">WE BRING THE STORE TO YOUR DOOR STEP</p>
+            <p class="off-sub">Fresh groceries delivered with care.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid lig mt-5">
+        <div class="void" id="void">
+            <div class="crop">
+            <ul class="listing" id="card-list" style="--count: 6;">
+                <li class="list"><div class="cardoo"><a href=""><span class="model-name">ABOUT</span><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span></a></div></li>
+                <li class="list"><div class="cardoo"><a href=""><span class="model-name">OUR SPECIALS</span><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit</span></a></div></li>
+                <li class="list"><div class="cardoo"><a href=""><span class="model-name">NEW ARRIVALS</span><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit</span></a></div></li>
+                <li class="list"><div class="cardoo"><a href=""><span class="model-name">DEAL OF THE DAY</span><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit</span></a></div></li>
+                <li class="list"><div class="cardoo"><a href=""><span class="model-name">SUPPORT</span><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit</span></a></div></li>
+                        <li class="list"><div class="cardoo"><a href=""><span class="model-name">FREE SHIPPING</span><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit</span></a></div></li>
+            </ul>
+            <div class="last-circle"></div>
+            <div class="second-circle"></div>
+            </div>
+            <div class="mask"></div>
+            <div class="center-circle">
+                <p class="paragrapg-groci">GROCi</p>
+                <img src="assets/img/groci-removebg-preview.png" class="groci-img" alt="">
+            </div>
+        <div>
+      </div>
+    </div>
+    </div>
+        <div class="row mt-2">
+            <div class="mt-5 head2">
+                <p class="head2-sub">GET NOW!</p>
+                <p class="head2-sub1">Groceries delivered in 10 min.</p>
+            </div>
+        </div>
+       
+      <div class="container-fluid main-content" >
+        <div class="mb-3" >
+            <h1 id="topbrands">TOP BRANDS</h1>
+        </div>
+        <div class="container-fluid brands-container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="assets/img/brand1-removebg-preview.png" class="card-img-top" alt="Brand 1">
+                        <div class="card-body">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="assets/img/elite.png" class="card-img-top" style="margin-top: 10px; height: 190px;" alt="Elite">
+                        <div class="card-body">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="assets/img/eastern.jpg" style="height:200px;" class="card-img-top" alt="Eastern">
+                        <div class="card-body">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="assets/img/britannia-removebg-preview.png" style="margin-top: 14px;height: 190px;" class="card-img-top" alt="Britannia">
+                        <div class="card-body">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="assets/img/kt-removebg-preview.png" class="card-img-top" alt="Kitchen tressure">
+                        <div class="card-body">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="assets/img/milk-removebg-preview.png" class="card-img-top" alt="Milk">
+                        <div class="card-body">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="assets/img/surf.jpg" class="card-img-top" alt="surf excel">
+                        <div class="card-body">
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="assets/img/fortune.png" class="card-img-top" alt="Fortune">
+                        <div class="card-body">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="assets/img/Dove_logo-removebg-preview.png" class="card-img-top" alt="Dove">
+                        <div class="card-body">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row main-header">
+          <div class="col-md-12 text-center">
+              <img src="assets/img/smartphone-with-groceries.jpg" alt="Vegetables">
+              <h2>GROCERY STORE</h2>
+              <p>Protect the health of every home</p>
+              <button class="btn-shop">Shop now</button>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6 category">
+              <img src="assets/img/vegetables-1.jpeg" alt="Fruits" class="bakery-img">
+              <div class="category-title">VEGETABLES</div>
+          </div>
+          <div class="col-md-6 category">
+              <img src="assets/img/nyts.jpeg" alt="Juices" class="bakery-img">
+              <div class="category-title">BAKERY</div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6 category">
+              <img src="assets/img/varieties-of-nuts.jpeg" alt="Vegetables">
+              <div class="category-title">DRIED</div>
+          </div>
+          <div class="col-md-6 category">
+              <img src="assets/img/juice.jpeg" alt="Dried">
+              <div class="category-title">JUICES</div>
+          </div>
+         
+          
+      </div>
+  </div>
+    <div class="row mt-3">
+      <div class="col-lg-12 ">
+          <p style="background-image: url('assets/img/vegetables.webp');background-size: cover;background-position: center;height: 450px;font-size:60px;text-align: center;font-weight: 700;color: rgb(255, 255, 255);text-shadow: 3px 3px 3px rgb(0, 0, 0);margin: 0;padding: 140px;">
+              THE BEST OF EVERYTHING THAT'S TRULY INDIAN!
+          </p>
+      </div>
+  </div>
+
+    </div>
+    
+    <section class="container-fluid">
+        <section class="container-fluid cat-section-two poppins" data-aos="fade-up" data-aos-duration="1000">
+          <h2>SHOP BY CATEGORY</h2>
+          <!--  -->
+          <div class="row row-cols-1 row-cols-md-6 g-3 cat-section-two-div">
+            <div class="col">
+              <div class="card">
+                <img src="assets/img/fruitz.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegitables</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="assets/img/meat&eggs.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Meats & Eggs</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="assets/img/appampowder.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sugar,Salt & Grains</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="assets/img/oil.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Oil,Spices & Pickles</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="assets/img/amul.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bakery & Dairy</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="assets/img/lays.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Snacks & Foods</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="row row-cols-1 row-cols-md-6 g-3 cat-section-two-div2" data-aos="fade-up" data-aos-duration="2000">
+            <div class="col">
+              <div class="card">
+                <img src="assets/img/drinks.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Beverages & Drinks</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="assets/img/personal-care.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Personal Care</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="assets/img/babyproduct.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Baby & Kids</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="assets/img/household.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Household</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="assets/img/ho.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Home & Kitchen</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="assets/img/school.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">School & Stationary</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!--  -->
+      
+    <div class="container-fluid">
+        <div class="row content-grocer">
+            <div class="col-md-6 order-md-1">
+                <h1>Make your online shop easier with our mobile app</h1>
+                <p>Groci store makes online grocery shopping fast and easy. Get groceries delivered and order the best of seasonal farm fresh food.</p>
+                <a href="#" class="btn btn-dark">
+                    <img src="https://developer.apple.com/assets/elements/icons/download-on-the-app-store/download-on-the-app-store.svg" alt="Download on the App Store" style="height: 40px;">
+                </a>
+                <a href="#" class="btn btn-dark">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style="height: 40px;">
+                </a>
+            </div>
+            <div class="col-md-6 order-md-2">
+                <img src="assets/img/grocery_bag-removebg-preview.png" alt="Grocery Bag" height="200">
+            </div>
+        </div>
+    </div>
+  <div class="subscribe-section mt-4">
+    <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+    <p class="mt-2">Get e-mail updates about our latest shops and special offers</p>
+    <form class="form-inline justify-content-center">
+      <div class="form-group mt-5">
+        <input type="email" class="form-control" placeholder="Enter email address">
+        <button type="submit" class="btn btn-subscribe">SUBSCRIBE</button>
+      </div>
+    </form>
+  </div>
+    <footer class="footer mt-5">
+      <div class="container-fluid mt-5">
+          <div class="row pt-5">
+              <div class="col-lg-4 col-md-6">
+                <div class="d-flex">
+                    <h3 class="mt-2 logo2">GROCi</h3>
+                <img class="footer-img" src="assets/img/groci-removebg-preview.png" alt="logo" width="80" height="70">
+                </div>
+                  <p>We are dedicated to providing fresh, high-quality groceries delivered conveniently to your doorstep.</p>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5>QUICK LINKS</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">HOME</a></li>
+                      <li><a href="#">SHOP</a></li>
+                      <li><a href="#">CONTACT US</a></li>
+                      <li><a href="#">ABOUT US</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5>CUSTOMER SERVICES</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">FAQs</a></li>
+                      <li><a href="#">SHIPPING INFORMATION</a></li>
+                      <li><a href="#">RETURN POLICY</a></li>
+                      <li><a href="#">PRIVACY POLICY</a></li>
+                      <li><a href="#">TERMS OF SERVICES</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                  <h5>FOLLOW US</h5>
+                  <ul class="list-unstyled social-icons d-flex gap-4" style="color: rgb(255, 255, 255);">
+                      <li><a href="#"><i class="fab fa-facebook " style="color: rgb(255, 255, 255);"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter" style="color: rgb(255, 255, 255);"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram" style="color: rgb(255, 255, 255);"></i></a></li>
+                      <li><a href="#"><i class="fab fa-pinterest" style="color: rgb(255, 255, 255);"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+          <hr>
+          <div class="row">
+              <div class="col-lg-12">
+                  <p class="text-center">© 2024 Your Grocery Store. All rights reserved.</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+   <!-- aos -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+/* font */
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  /*  */
+
+.cat-section-one{
+    display: flex;
+    margin-top: 50px;
+}
+.cat-section-two{
+    margin:20px 0px 0px 0;
+}
+.cat-section-two h2{
+    padding: 20px 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+.cat-section-two-div{
+    display: flex;
+}
+.cat-section-two h5{
+    font-size: 13.5px;
+    font-weight: 700;
+}
+.cat-section-two-div2{
+    padding: 20px 0px 0px 0; 
+}
+/* cat section four */
+.cat-section-four{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.cat-section-five{
+    background-color: gray;
+    width: 100%;
+}
+.cat-section-five{
+    background-color:#f7f9ff;
+    padding: 50px 40px;
+    
+}
+.cat-section-five h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(164, 161, 161);
+}
+.cat-section-five p{
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+.card-title{
+    text-align: center;
+}
